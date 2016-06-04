@@ -46,3 +46,21 @@ body {
 	display:table;
 	clear:both;
 }
+
+.right-column-list {
+	display:inline-block;
+	list-style:none;
+	font-size:20px;
+	margin-right:40px;
+	color:#e2702e;
+}
+
+.right-column .numbers {
+	text-align:right;
+}
+
+.right-column-list li:nth-child(1),
+.right-column-list li:nth-child(6),
+.right-column-list li:nth-child(11) {
+	color:#ffffff;
+} 
