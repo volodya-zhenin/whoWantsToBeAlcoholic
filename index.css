@@ -1,0 +1,20 @@
+body {
+	min-width:1000px;
+	margin:0;
+	padding:0;
+	font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	line-height:24px;
+	color:#ffffff;
+	background:#040231;
+}
+
+.left-column {
+	float:left;
+}
+
+.right-column {
+	float:right;
+}
+
