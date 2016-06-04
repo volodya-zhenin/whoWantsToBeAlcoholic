@@ -12,6 +12,7 @@ body {
 
 .left-column {
 	margin-top:20px;
+	margin-left:10px;
 	float:left;
 }
 
@@ -20,7 +21,20 @@ body {
 	height:80px;
 	border:10px solid #0f9dff;
 	border-radius:150px / 90px;
+	background:url("img/icon-sprite.png") no-repeat;
 	margin-bottom:25px;
+}
+
+.exit {
+	background-position: 8px 27px;
+}
+
+.message {
+	background-position: 8px -39px;
+}
+
+.help {
+	background-position: 8px -105px;
 }
 
 .right-column {
