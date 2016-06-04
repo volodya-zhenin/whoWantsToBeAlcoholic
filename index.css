@@ -11,10 +11,24 @@ body {
 }
 
 .left-column {
+	margin-top:20px;
 	float:left;
+}
+
+.left-column-item {
+	width:150px;
+	height:80px;
+	border:10px solid #0f9dff;
+	border-radius:150px / 90px;
+	margin-bottom:25px;
 }
 
 .right-column {
 	float:right;
 }
 
+.top-section:after {
+	content:"";
+	display:table;
+	clear:both;
+}
