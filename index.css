@@ -64,33 +64,44 @@ body {
 .right-column-list li:nth-child(6),
 .right-column-list li:nth-child(11) {
 	color:#ffffff;
-} 
+}
 
-.question-field {
-	height:130px;
+.question-field, .answer-block > div {
+	text-align:center;
 	background-image:url("img/Lozenge.png");
 	background-size: 100% 400%;
 	background-position: 0 0;
 }
 
+.question-field {
+	position: absolute;
+	width:100vw;
+	height:20vh;
+	bottom:20vh;
+}
 
 .answer-block > div {
-	height:80px;
-	width:100%;
+	position: absolute;
+	height:10vh;
+	width:50%;
 	display:inline-block;
-	background-image:url("img/Lozenge.png");
-	background-size: 50% 400%;
-	background-position: 0 34%;
 	margin-top:15px;
+}
+
+.answer-block>div:nth-child(1), .answer-block>div:nth-child(2){
+	bottom: 10vh;
+}
+
+.answer-block>div:nth-child(3), .answer-block>div:nth-child(4){
+	bottom: 0%;
+}
+
+.answer-block>div:nth-child(2n+1) {
+	left: 50%;
 }
 
 .answer-block > div:hover,
 .answer-block > div:active {
-	background-position: 0 67%;
 	cursor:pointer;
-}
-
-.answer {
-	text-align:center;
 }
 

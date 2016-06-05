@@ -5,6 +5,7 @@ doc.gebt = doc.getElementsByTagName;
 doc.gebc = doc.getElementsByClassName;
 doc.qs = doc.querySelector;
 doc.qsa = doc.querySelectorAll;
+doc.ce = doc.createElement;
 
 var log = console.log.bind(console);
 
@@ -55,10 +56,6 @@ var win = function(){
 	doc.qs('#win').show();
 };
 
-var answer = function(){
-	loose();
-};
-
 var defect = function(str, d){
 	var c = Math.floor(str.length * (1 - d));
 	while(c){
@@ -68,6 +65,13 @@ var defect = function(str, d){
 		c--;
 	}
 	return str;
+};
+
+var answer = function(e){
+	if(this.getAttribute('r') == 1){
+		if(!questions.length || qNum == 15)win();
+		else showNextQuestion();
+	} else loose();
 };
 
 var showNextQuestion = function(){
@@ -86,12 +90,7 @@ var showNextQuestion = function(){
 					trigger = false;
 					aEl[i].setAttribute('r', 1);
 				} else aEl[i].setAttribute('r', 0);
-				aEl[i].onclick = function(e){
-					if(this.getAttribute('r') == 1){
-						if(!questions.length || qNum == 15)win();
-						else showNextQuestion();
-					} else loose();
-				};
+				aEl[i].onclick = answer;
 				showElement(aEl[i]);
 			}
 		}
