@@ -10,6 +10,10 @@ body {
 	background:#040231;
 }
 
+#loose, #win {
+	display: none;
+}
+
 .left-column {
 	margin-top:20px;
 	margin-left:10px;
