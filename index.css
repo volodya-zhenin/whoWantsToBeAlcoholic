@@ -102,6 +102,7 @@ body {
 
 .answer-block > div:hover,
 .answer-block > div:active {
+	background-position: 0% 200%;
 	cursor:pointer;
 }
 
